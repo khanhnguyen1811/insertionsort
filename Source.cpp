@@ -24,32 +24,7 @@ void Swapp(int *pa, int *pb){
 	*pa = *pb; 
 	*pb = tam;
 }
-void BubbleSort(int arr[], int sopt){
-	int i, j; 
-	for (i = 0; i < sopt-1; i++)
-	{
-		for (j = 0; j < sopt-1-i; j++)
-		{
-			if (arr[j] > arr[j+1])
-			{
-				Swapp(&arr[j], &arr[j + 1]);
-			}
-		}
-	}
-}
-void SelectionSort(int arr[], int sopt){
-	int i, j; 
-	for (i = 0; i < sopt; i++)
-	{
-		for (j = i+1; j < sopt; j++)
-		{
-			if (arr[i] > arr[j])
-			{
-				Swapp(&arr[i], &arr[j]);
-			}
-		}
-	}
-}
+
 int main(){
 	int arr[100], i, sopt; 
 	cout << "nhap sopt : "; cin >> sopt; 
